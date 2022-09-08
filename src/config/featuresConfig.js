@@ -35,12 +35,12 @@ export const shouldHaveSorts = atom({
 
 export const shouldHaveCarousels = atom({
   key: 'shouldHaveCarousels', // unique ID (with respect to other atoms/selectors)
-  default: true, // default value (aka initial value)
+  default: false, // default value (aka initial value)
 });
 
 export const shouldHaveVoiceSearch = atom({
   key: 'shouldHaveVoiceSearch',
-  default: true,
+  default: false,
 });
 
 export const shouldHaveStats = atom({
@@ -50,19 +50,19 @@ export const shouldHaveStats = atom({
 
 export const shouldHaveInjectedBanners = atom({
   key: 'shouldHaveInjectedBanners',
-  default: true,
+  default: false,
 });
 
 export const shouldHavePersona = atom({
   key: 'shouldHavePersona',
-  default: true,
+  default: false,
 });
 
 // Make sure you create the injected content before turning this on, to avoid errors
 // Please see https://github.com/algolia/algolia-react-boilerplate#--injected-content for more info on injected content
 export const shouldHaveInjectedHits = atom({
   key: 'shouldHaveInjectedHits',
-  default: true,
+  default: false,
 });
 
 export const shouldHaveFederatedSearch = atom({

@@ -9,17 +9,17 @@ import aa from 'search-insights';
 
 // ADJUST THE APIKEY AND APPID TO YOUR OWN
 export const searchClientCreds = {
-  APIKey: 'b5fcdde4a6fd2c831a2706fec93c48b7',
-  appID: '853MYZ81KY',
+  APIKey: 'ceccf5707ee9c36062d2af126551aa8c',
+  appID: 'TEJIG1OP44',
   // Used to get the Persona Strat and score if you haven't got one you have to create one in you API Keys
   // https://www.algolia.com/doc/rest-api/personalization/#get-the-current-personalization-strategy
-  recommendApi: '4983f1e3449111609c1e7688209b787b'
+  recommendApi: 'ceccf5707ee9c36062d2af126551aa8c'
 };
 
 // ADJUST THE DEFAULT VALUE TO YOUR MAIN INDEX
 export const mainIndex = atom({
   key: 'mainIndex', // unique ID (with respect to other atoms/selectors)
-  default: 'flagship_fashion', // default value (aka initial value)
+  default: 'prod_sunrise', // default value (aka initial value)
 });
 
 // ADJUST THE VALUES FOR EACH INDEX NAME IF YOU HAVE THEM
@@ -29,8 +29,8 @@ export const indexNames = selector({
   get: ({ get }) => {
     return {
       suggestionsIndex: `${get(mainIndex)}_query_suggestions`,
-      articlesIndex: 'canda_customDemo_articles',
-      injectedContentIndex: `${get(mainIndex)}_influencers`,
+      articlesIndex: 'zendesk_d3v-algolia-peter_articles',
+      injectedContentIndex: 'influencers',
     };
   },
 });
